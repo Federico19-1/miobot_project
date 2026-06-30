@@ -27,7 +27,9 @@ app.command("/miobot-help", async ({ ack, respond }) => {
     text:
 `Available Commands:
 /miobot-ping - Check bot latency
-/miobot-catfact - Get a cat fact`
+/miobot-catfact - Get a cat fact
+/miobot-joke - Get a random joke`
+    
   });
 });
 
