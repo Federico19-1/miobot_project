@@ -13,7 +13,7 @@ app.command("/miobot-ping", async ({ command, ack, respond }) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
-  await respond({ text: `Pong!\nLatency: ${latency}ms` });
+  await respond({ text: `Boom!\nLatency: ${latency}ms` });
 });
 
 (async () => {
@@ -28,8 +28,7 @@ app.command("/miobot-help", async ({ ack, respond }) => {
 `Available Commands:
 /miobot-ping - Check bot latency
 /miobot-catfact - Get a cat fact
-/miobot-joke - Get a random joke`
-    
+/miobot-joke - Get a random joke` 
   });
 });
 
