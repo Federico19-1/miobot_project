@@ -11,8 +11,11 @@ A Slack bot built with Node.js and Bolt that runs continuously on a remote Linux
 This bot lives inside a Slack workspace and responds to messages automatically — 24 hours a day, 7 days a week — without ever needing a laptop to be open.
 
 **Commands / features:**
-- _(Federico: aggiungi qui cosa fa il bot — es. risponde a certi messaggi, comandi slash, ecc.)_
-
+- /miobot-help Says all the commands
+- /miobot-catfact Get a random catfact
+- /miobot-joke    Get a random joke
+- /miobot-ping    Says the latency 
+  
 ---
 
 ## 🛠️ Tech Stack
@@ -61,6 +64,8 @@ node index.js
 ---
 
 ## 🌐 Deploy on a Linux server (24/7 with systemd)
+
+(I did deployed my bot on Nest)
 
 The real challenge of this project was keeping the bot alive permanently on a remote server — not just running it manually from a terminal.
 
@@ -145,4 +150,3 @@ The `.env` file containing secret tokens is listed in `.gitignore` and is **neve
 
 **Federico Tarallo** — built this as my very first coding project for [Hack Club Stardance](https://stardance.hackclub.com) 🚀
 
-Special thanks to my brother Victor for helping me debug systemd and get this running!
