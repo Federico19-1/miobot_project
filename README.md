@@ -20,14 +20,14 @@ If you want to build your own just follow this guide:
 - `/miobot-latency` — measures and displays the bot's latency
 - `/miobot-help` — lists all available commands
 - `/miobot-joke` — fetches a random joke from an external API
-- Restarts automatically if it ever crashes (managed by systemd)
-- Stays online 24/7, even when my laptop is closed
+- Stays online 24/7, even when laptop is closed
 
 ---
 
 ## ⚙️ How it works
 
-The bot connects to Slack using **Socket Mode** instead of a public HTTP endpoint — meaning it doesn't need a domain or open ports, just an outbound connection. This made it perfect for running on Hack Club's Nest server without any extra networking setup.
+Instead of using a traditional setup where Slack has to "knock on the door" of our server to send commands (which requires web domains and open firewall ports), this bot uses **Slack's Socket Mode**, a mode where scurity is higher because no complex firewall or ports are nedeed and it doesn't require a domain needed, so it works well from anywhere-
+This made it the perfect match for Hack Club's **Nest server**. The bot just connects to Slack automaticallly, without a lot of problems.
 
 
 
