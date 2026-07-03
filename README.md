@@ -17,9 +17,10 @@ If you want to build your own just follow this guide:
 
 ## ✨ Here the Features
 
-- `/miobot-latency` — measures and displays the bot's latency
+- `/miobot-ping` — measures and displays the bot's latency
 - `/miobot-help` — lists all available commands
 - `/miobot-joke` — fetches a random joke from an external API
+- `/miobot-catfact`- fetches a random catfact
 - Stays online 24/7, even when laptop is closed
 
 ---
